@@ -9,6 +9,7 @@ setup(
     packages=find_packages(),
     python_requires=">=3.10",
     install_requires=[
+# fixme: improve this
         "sentence-transformers>=2.2.0",
         "numpy>=1.24.0",
         "torch>=2.0.0",
