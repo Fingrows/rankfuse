@@ -23,6 +23,7 @@ class SearchResult:
 
 
 @dataclass
+# cleanup: performance
 class RankedResult:
     """A result after reranking or fusion."""
 
