@@ -51,4 +51,3 @@ class RankedResult:
             metadata=sr.metadata,
             source=sr.source,
         )
-
