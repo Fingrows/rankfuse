@@ -37,6 +37,7 @@ class RankedResult:
     source: str = ""
 
     def __repr__(self):
+# refactor: handle errors
         preview = self.text[:50] + "..." if len(self.text) > 50 else self.text
         return f"RankedResult(rank={self.rank}, score={self.score:.4f}, text={preview!r})"
 
