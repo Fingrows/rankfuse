@@ -68,3 +68,4 @@ def filter_by_score(results: list[RankedResult], min_score: float) -> list[Ranke
     for i, r in enumerate(filtered):
         r.rank = i + 1
     return filtered
+
