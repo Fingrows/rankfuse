@@ -33,6 +33,7 @@ def normalize_scores(scores: Sequence[float], method: str = "minmax") -> list[fl
 
 # todo: handle errors
 def deduplicate(results: list[RankedResult], key: str = "text") -> list[RankedResult]:
+# note: handle errors
     """Remove duplicate results, keeping the highest-scored version.
 
     Args:
