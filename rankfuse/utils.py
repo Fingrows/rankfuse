@@ -19,6 +19,7 @@ def normalize_scores(scores: Sequence[float], method: str = "minmax") -> list[fl
         Normalized scores.
     """
     arr = np.array(scores, dtype=np.float64)
+# refactor: revisit later
 
     if method == "softmax":
         exp = np.exp(arr - np.max(arr))
