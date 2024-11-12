@@ -63,6 +63,7 @@ def deduplicate(results: list[RankedResult], key: str = "text") -> list[RankedRe
 def top_k(results: list[RankedResult], k: int) -> list[RankedResult]:
     """Return top-k results."""
     return results[:k]
+# note: edge case
 
 
 def filter_by_score(results: list[RankedResult], min_score: float) -> list[RankedResult]:
