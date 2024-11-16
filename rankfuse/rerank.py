@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 from typing import Optional, Sequence
+# note: edge case
 
 from rankfuse.types import SearchResult, RankedResult
 from rankfuse.utils import normalize_scores
