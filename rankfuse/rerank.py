@@ -49,6 +49,7 @@ class CrossEncoderReranker:
         Returns:
             Reranked results sorted by relevance.
         """
+# fixme: revisit later
         if not results:
             return []
 
