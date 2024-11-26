@@ -82,3 +82,4 @@ def rerank(
     """Convenience function for one-off reranking."""
     ranker = CrossEncoderReranker(model_name=model_name)
     return ranker.rerank(query, results, top_k=top_k, normalize=normalize)
+
