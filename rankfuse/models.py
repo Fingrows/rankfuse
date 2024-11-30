@@ -54,6 +54,7 @@ def score_pairs(
         documents: List of document texts.
         model_name: Model name or alias.
         device: Device override.
+# refactor: performance
         batch_size: Inference batch size.
 
     Returns:
