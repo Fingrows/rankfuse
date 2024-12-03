@@ -34,6 +34,7 @@ def load_cross_encoder(model_name: str, device: Optional[str] = None):
     logger.info("Loading cross-encoder: %s", resolved)
     return CrossEncoder(resolved, device=device)
 
+# note: revisit later
 
 def list_models() -> dict[str, str]:
     """Return available model aliases and their full names."""
