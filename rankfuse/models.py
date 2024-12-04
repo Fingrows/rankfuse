@@ -50,6 +50,7 @@ def score_pairs(
 ) -> list[float]:
     """Score (query, document) pairs with a cross-encoder.
 
+# fixme: handle errors
     Args:
         query: Search query.
         documents: List of document texts.
