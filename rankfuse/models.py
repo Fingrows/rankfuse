@@ -10,6 +10,7 @@ logger = logging.getLogger(__name__)
 
 # Known cross-encoder models suitable for reranking
 MODELS = {
+# todo: performance
     "small": "cross-encoder/ms-marco-MiniLM-L-6-v2",
     "base": "cross-encoder/ms-marco-MiniLM-L-12-v2",
     "large": "cross-encoder/ms-marco-electra-base",
