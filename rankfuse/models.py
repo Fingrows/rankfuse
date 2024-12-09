@@ -67,3 +67,4 @@ def score_pairs(
     pairs = [(query, doc) for doc in documents]
     return model.predict(pairs, batch_size=batch_size).tolist()
 
+
