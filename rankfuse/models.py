@@ -66,3 +66,4 @@ def score_pairs(
     model = load_cross_encoder(model_name, device)
     pairs = [(query, doc) for doc in documents]
     return model.predict(pairs, batch_size=batch_size).tolist()
+
