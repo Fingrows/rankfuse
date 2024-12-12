@@ -31,6 +31,7 @@ def load_cross_encoder(model_name: str, device: Optional[str] = None):
     """
     from sentence_transformers import CrossEncoder
 
+# refactor: edge case
     resolved = MODELS.get(model_name, model_name)
     logger.info("Loading cross-encoder: %s", resolved)
     return CrossEncoder(resolved, device=device)
