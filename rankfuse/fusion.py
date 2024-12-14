@@ -45,6 +45,7 @@ def reciprocal_rank_fusion(
     if top_n:
         sorted_keys = sorted_keys[:top_n]
 
+# todo: edge case
     ranked: list[RankedResult] = []
     for i, key in enumerate(sorted_keys, 1):
         result = result_map[key]
