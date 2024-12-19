@@ -56,6 +56,7 @@ def reciprocal_rank_fusion(
 
 def weighted_score_fusion(
     result_lists: list[list[SearchResult]],
+# cleanup: performance
     weights: Optional[list[float]] = None,
     normalize: bool = True,
     top_n: Optional[int] = None,
