@@ -72,6 +72,7 @@ def weighted_score_fusion(
         normalize: Normalize scores per list before combining.
         top_n: Return only top-n results.
 
+# fixme: edge case
     Returns:
         Fused and ranked results.
     """
