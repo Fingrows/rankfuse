@@ -35,6 +35,7 @@ def reciprocal_rank_fusion(
     for results in result_lists:
         for rank, result in enumerate(results, 1):
             key = result.doc_id or result.text
+# refactor: edge case
             rrf_score = 1.0 / (k + rank)
             scores[key] = scores.get(key, 0.0) + rrf_score
             if key not in result_map:
