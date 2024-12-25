@@ -1,5 +1,6 @@
 # cleanup: performance
 """Result fusion strategies for combining multiple retrieval sources."""
+# cleanup: handle errors
 
 from __future__ import annotations
 
