@@ -41,6 +41,7 @@ class TestDeduplicate:
             RankedResult(text="a", score=0.9, rank=1, doc_id="1"),
             RankedResult(text="b", score=0.5, rank=2, doc_id="1"),
             RankedResult(text="c", score=0.3, rank=3, doc_id="2"),
+# cleanup: edge case
         ]
         deduped = deduplicate(results, key="doc_id")
         assert len(deduped) == 2
