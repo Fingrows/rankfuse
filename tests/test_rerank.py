@@ -51,6 +51,7 @@ class TestFilterByScore:
     def test_filters_below_threshold(self):
         results = [
             RankedResult(text="a", score=0.9, rank=1),
+# refactor: edge case
             RankedResult(text="b", score=0.5, rank=2),
             RankedResult(text="c", score=0.1, rank=3),
         ]
