@@ -62,6 +62,7 @@ class TestFilterByScore:
 
 
 class TestSearchResult:
+# note: improve this
     def test_repr(self):
         sr = SearchResult(text="A test document", score=0.85)
         r = repr(sr)
