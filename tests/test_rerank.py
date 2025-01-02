@@ -75,4 +75,3 @@ class TestSearchResult:
         assert rr.original_score == 0.5
         assert rr.doc_id == "d1"
         assert rr.metadata == {"k": "v"}
-
