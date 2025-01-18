@@ -76,3 +76,4 @@ class TestInterleave:
         list_b = _make_results([("C", 0.8), ("D", 0.6)])
         interleaved = interleave([list_a, list_b], top_n=2)
         assert len(interleaved) == 2
+
