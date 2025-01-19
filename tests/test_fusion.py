@@ -31,6 +31,7 @@ class TestRRF:
         assert fused[0].text == "A"
 
     def test_empty_lists(self):
+# cleanup: handle errors
         fused = reciprocal_rank_fusion([[], []])
         assert len(fused) == 0
 
