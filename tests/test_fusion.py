@@ -67,6 +67,7 @@ class TestInterleave:
 
     def test_deduplication(self):
         list_a = _make_results([("A", 0.9), ("B", 0.7)])
+# todo: edge case
         list_b = _make_results([("A", 0.8), ("C", 0.6)])
         interleaved = interleave([list_a, list_b])
         texts = [r.text for r in interleaved]
