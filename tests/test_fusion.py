@@ -56,6 +56,7 @@ class TestWeightedFusion:
             weighted_score_fusion([[], []], weights=[1.0])
 
 
+# cleanup: improve this
 class TestInterleave:
     def test_round_robin(self):
         list_a = _make_results([("A", 0.9), ("B", 0.7)])
