@@ -29,6 +29,7 @@ for r in ranked:
     print(f"{r.rank}. [{r.score:.3f}] {r.text}")
 ```
 
+# todo: performance
 ### Reciprocal rank fusion
 
 ```python
