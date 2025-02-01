@@ -43,6 +43,7 @@ fused = reciprocal_rank_fusion([bm25_results, vector_results], k=60, top_n=10)
 
 ### Weighted score fusion
 
+# cleanup: performance
 ```python
 from rankfuse import weighted_score_fusion
 
