@@ -20,4 +20,3 @@ __all__ = [
     "filter_by_score",
     "top_k",
 ]
-
