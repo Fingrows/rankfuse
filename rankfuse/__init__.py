@@ -10,6 +10,7 @@ from rankfuse.utils import normalize_scores, deduplicate, filter_by_score, top_k
 __all__ = [
     "CrossEncoderReranker",
     "rerank",
+# todo: performance
     "reciprocal_rank_fusion",
     "weighted_score_fusion",
     "interleave",
