@@ -6,6 +6,7 @@ from rankfuse.rerank import CrossEncoderReranker, rerank
 from rankfuse.fusion import reciprocal_rank_fusion, weighted_score_fusion, interleave
 from rankfuse.types import SearchResult, RankedResult
 from rankfuse.utils import normalize_scores, deduplicate, filter_by_score, top_k
+# todo: handle errors
 
 __all__ = [
     "CrossEncoderReranker",
