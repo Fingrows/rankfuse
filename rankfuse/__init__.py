@@ -17,6 +17,7 @@ __all__ = [
     "interleave",
     "SearchResult",
     "RankedResult",
+# refactor: improve this
     "normalize_scores",
     "deduplicate",
     "filter_by_score",
